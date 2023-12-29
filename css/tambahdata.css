@@ -1,0 +1,250 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    /* color */
+    --background: #FFFFFF;
+    --primary1: #1F2937;
+    --primary2: #84CC16;
+    --primary3: #E5E7EB;
+    --primary4: #EF4444;
+    --primary5: #F3F4F6;
+    --primary6: #FF6600;
+    
+}
+body{
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+header nav.navbar {
+    background-color: var(--primary1);
+}
+
+header h2.navbar-text {
+    color: var(--background);
+    font-size: 24px;
+    padding: 10px 0;
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+.navbar-toggler {
+    color: var(--background);
+}
+
+
+/* content tambah data */
+.text-judul {
+    margin-left: 30px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.label-tambah {
+    margin-left: 30px;
+    width: 30%;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--dark-grey);
+}
+
+.input-tambah {
+    width: 63%;
+    padding: 8px;
+    border: 1px solid var(--primary3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.input-tambah:focus {
+    outline: none;
+    border-color: var(--primary2);
+}
+
+button.text-wajib {
+    color: var(--dark-grey);
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 8px;
+    padding: 2px 4px;
+    background-color: var(--grey);
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+span.text-desc {
+    margin-left: 530px;
+    font-size: 12px;
+    margin-top: 8px;
+    color: var(--dark-grey);
+}
+
+.textarea-tambah {
+    margin-top: 0;
+}
+
+.form-group {
+    display: flex;
+    margin: 0 30px;
+    align-items: start;
+}
+.form-group2 {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+/* dropdown */
+.form-group .label-flex {
+    display: flex;
+    margin-right: 230px;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+.form-group .label-flex-image {
+    display: flex;
+    margin-right: 210px;
+
+}
+
+
+
+
+/* modal */
+.containers {
+    background-color: var(--text);
+    max-width: 350px;
+    width: 100%;
+    padding: 25px;
+    margin: 25px auto 0;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group .label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    z-index: 1;
+    font-size: 12px;
+    margin-bottom: 4px;
+    padding: 0 2px;
+    opacity: 0;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.input-group {
+    width: 100%;
+    position: relative;
+}
+.input-group input {
+    padding: 12px 40px 12px 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--background);
+    width: 100%;
+    transition: all .3s;
+}
+
+.label::before {
+    content: "";
+    height: 5px;
+    background-color: var(--box);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.input-group input:focus {
+    border: 2px solid var(--primary1);
+}
+
+.input-group input:focus + .label, 
+.filled {
+    top: -10px;
+    opacity: 1;
+    animation-delay: 0.2s;
+    color: var(--primary1);
+}
+
+.input-group input::placeholder {
+    opacity: 1;	
+}
+
+.input-group input:focus::placeholder {
+    opacity: 0;
+    animation-delay: 0.2s;
+    
+}
+
+/* button bottoms */
+button.btn-data {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+}
+home .button-all {
+    margin-left: 110px;
+}
+.delete {
+    background-color: var(--primary5);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.delete:hover{
+    background-color: var(--primary3);
+}
+
+.home .btn-table .text-button {
+    background-color: var(--box);
+    color: var(--ungu1);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.home .btn-table .text-button:hover {
+    color: var(--box);
+    background-color: var(--primary3);
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
